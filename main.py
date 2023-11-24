@@ -56,7 +56,7 @@ def view_book_details(book_id):
         print(f"Жанр: {book[4]}")
     else:
         print("Книга не найдена.")
-
+# Поиск по жанру
 def search_by_genre(genre):
     cursor.execute('SELECT id, title, author FROM books WHERE genre = ?', (genre,))
     books = cursor.fetchall()
@@ -87,7 +87,7 @@ def delete_book(book_id):
     print("Книга успешно удалена.")
 
 
-# Поиск книги
+# Поиск книги по ключевому слову
 def book_search():
     keyword = input("Введите ключевое слово для поиска: ")
     search_books(keyword)
@@ -107,7 +107,7 @@ if __name__ == "__main__":
         print("0. Выход")
 
         choice = input("Выберите действие: ")
-
+        
         if choice == '1':
             add_book()
         elif choice == '2':
