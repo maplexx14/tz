@@ -1,5 +1,5 @@
 # tz
-tz для lolz
-Скачиваете библиотеку
+tz для lolz<br>
+1.Скачиваете библиотек<br>
 <code>pip install sqlite3</code>
-Запускаете файл main.py
+2.Запускаете файл <code>main.py</code>
